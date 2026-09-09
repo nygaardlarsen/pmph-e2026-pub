@@ -6,7 +6,7 @@
 
 #include "helper.h"
 
-#define GPU_RUNS 100
+#define GPU_RUNS 300
 
 void vecAddCPU(float* A, float* B, float *C, unsigned int N) {
 

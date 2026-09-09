@@ -7,7 +7,6 @@
 --   [2.0f32, 1.0f32, 0.0f32, 3.0f32]
 -- }
 -- output { [3.0f32, 0.0f32, -4.0f32, 6.0f32, 9.0f32] }
-
 -- ==
 -- compiled input {
 --   [2i64, 0i64, 1i64, 2i64, 3i64, 1i64]
@@ -16,11 +15,17 @@
 --   [1.0f32, 2.0f32, 3.0f32, 4.0f32]
 -- }
 -- output { [21.0f32, 25.0f32, 10.0f32] }
+
+
+
 ------------------------
 --- Sgm Scan Helpers ---
 ------------------------
 -- Generic segmented scan (generic in the binary operator and in the element
 -- type, t, of the segmented array).
+
+
+
 let sgmScan [n] 't
             (op: t -> t -> t)
             (ne: t)
